@@ -1,15 +1,21 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
-<head>
+<html lang="en" ng-app="myApp" ng-csp="">
+<head>  
   <meta charset="utf-8">
   <title>My AngularJS App</title>
+  <link rel="stylesheet" media="all" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" media="all" href="lib/bootstrap/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" media="all" href="lib/font-awesome/css/font-awesome.min.css">  
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+  <nav ng-controller="WindCtrl">
+    <a href="" id="close-button" title="Close" ng-click="$window.close()"><i class="icon-remove"></i></a>
+    <ul class="menu">
+      <li><a href="#/view1">view1</a></li>
+      <li><a href="#/view2">view2</a></li>
+	  </ul>  
+  </nav>
 
   <div ng-view></div>
 

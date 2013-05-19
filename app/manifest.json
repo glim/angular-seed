@@ -1,0 +1,18 @@
+{
+  "name": "Cortical Metrics NSD",
+  "version": "0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "23",
+  "icons": {
+    "16": "img/calculator-16.png",
+    "128": "img/calculator-128.png"
+  },
+  "key": "aabbccopbagaaaaahnncndkckdpmpado",
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },  
+  "permissions": ["experimental"]
+  //"optional_permissions": [ {"usbDevices": [{"vendorId": 1917, "productId": 1040}]}]
+}
